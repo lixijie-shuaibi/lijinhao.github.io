@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<title>咖啡</title>	
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+<div class="content">
+    <div class="header">
+        <div class="logo"><a href="#"><img class=pic src="images/logo.png"></a></div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="kafei.html">咖啡及文化</a></li>
+                <li><a href="meishi.html">美食与饮品</a></li>
+                <li><a href="xinwen.html">美食新闻</a></li>
+                <li><a href="liuyan.html">留言板</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="lunbo">   
+        <div class="flashbox">
+            <div id=SwitchBigPic>
+                <div><a href="#"><img class="pic" src="images/01.jpg"></a></div>
+				<div><a href="#"><img class="pic" src="images/02.jpg"></a></div>
+                <div><a href="#"><img class="pic" src="images/03.jpg"></a></div>
+				<div><a href="#"><img class="pic" src="images/04.jpg"></a></div>
+                <div><a href="#"><img class="pic" src="images/05.jpg"></a></div>                           
+            </div>
+            <ul id=SwitchNav>
+                <li><a href="#"><img src="images/01.jpg"><b>夏天是什么味道？</b></a> </li>
+                <li><a href="#"><img src="images/02.jpg"><b>夏季甜点</b></a> </li>
+                <li><a href="#"><img src="images/03.jpg"><b>美味香槟</b></a> </li>
+                <li><a href="#"><img src="images/04.jpg"><b>各式点心</b></a> </li>
+                <li><a href="#"><img src="images/05.jpg"><b>店长推荐</b></a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+		<div class="xinwen">
+        	<div class="title">美食新闻</div>
+			<ul>
+            	<li>
+                	<p><a href="#">有水则灵,漂流道开进亲子乐园,萌萌马卡龙色系又出新系列</a></p>
+                    <span>06-01</span>
+                </li>
+            	<li>
+                	<p><a href="#">喝咖啡的好处和坏处:12个健康益处和六个缺点</a></p>
+                    <span>06-01</span>
+                </li>     
+            	<li>
+                	<p><a href="#">世界4大著名甜点,德国黑森林上榜,最后一种代表爱和幸福</a></p>
+                    <span>06-01</span>
+                </li>
+            	<li>
+                	<p><a href="#">不加色素的彩虹蛋糕做法教学,女朋友、孩子看了一定很喜欢</a></p>
+                    <span>06-01</span>
+                </li>  
+            	<li>
+                	<p><a href="#">高颜值慕斯蛋糕,做法真的很简单,连烤箱都不要用,这样真好吃!</a></p>
+                    <span>06-01</span>
+                </li>
+            	<li>
+                	<p><a href="#">无需烤箱,也能做出蓝莓慕斯蛋糕,夏日消暑佳品,入口即化真好吃</a></p>
+                    <span>06-01</span>
+                </li>                                             
+            </ul>         
+        </div>
+    </div>
+    <div class="footer">
+        <p> 版权所有@夏季甜点-原色咖啡 </p>
+        <p> 京ICP备12345678号</p>
+    </div>
+	  <script src="js/changimages.js" type=text/javascript></script>
+      <script src="js/prototype.js" type=text/javascript></script>
+      <script>
+        var bigswitch = new SwitchPic(
+            {
+                bigpic:"SwitchBigPic",
+                switchnav:"SwitchNav",
+                selectstyle:"selected",
+                objname:"bigswitch"
+            }
+        ) ;
+        bigswitch.goSwitch(bigswitch,0);
+        bigswitch.autoSwitchTimer = setTimeout("bigswitch.autoSwitch(bigswitch) ;", 3000);
+    </script>
+</body>
+</html>
